@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'frontend.apps.FrontendConfig',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,7 @@ ROOT_URLCONF = 'bilir_insaat.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,"frontend/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,6 +118,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+IMAGE_ROOT = os.path.join(BASE_DIR, 'frontend/images')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'frontend/static')
+]
 STATIC_URL = 'static/'
 
 # Default primary key field type
