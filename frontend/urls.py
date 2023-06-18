@@ -1,6 +1,7 @@
-from django.urls import path, include
-from .views import home
+from django.urls import path
+from .views import home, reference
 
 urlpatterns = [
     path('home/',home),
+    path('reference/',reference)
 ]

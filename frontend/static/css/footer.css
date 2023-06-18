@@ -70,6 +70,9 @@ ul {
     top: 20px;
 }
 
+.container .bottom-text p {
+    color: #bbbbbb;
+}
 @media(max-width: 767px) {
     .footer-col {
         width: 50%;
