@@ -1,19 +1,138 @@
-{% load static %}
+<!-- {% load static %} -->
 
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
 
-    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bilir İnşaat</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="../static/css/home.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .nav-link {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 1.1rem;
+            color: #fff !important;
+            position: relative;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 4px;
+            scale: 0 1;
+            transform-origin: right;
+            transition: scale 0.25s;
+        }
+
+        .nav-link:hover::before {
+            scale: 1;
+            transform-origin: left;
+        }
+
+        .navbar-nav {
+            gap: 70px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>allahuekber
-    adadawe
-</h1>
 
-{% include 'footer.html' %}
+    <div style="height: 80vh;background-color:white;background-image: url(../static/images/main-bg.jpg);background-position: center right;background-repeat: no-repeat;background-size: cover;">
+        <div class="container">
+            <header class="pt-5 mb-2">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid p-0">
+                        <a class="navbar-brand" href="#"><img src="../static/images/logo.png"
+                                style="width: 180px;height:auto"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <div class="mb-2 mb-lg-0 d-flex justify-content-end w-100">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ana Sayfa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hakkımızda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">İletişim</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Referanslar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="d-flex" style="height: 60vh!important;">
+                <div class="row d-flex align-items-center">
+                    <div style="font-family: 'Poppins', sans-serif;font-weight: 900;color: #fff;">
+                        <div
+                            style="line-height: 75px;font-size: 4.2rem;font-weight:500;color: transparent;-webkit-text-stroke: 1px #fff;">
+                            LOREM</div>
+                        <div style="line-height: 75px;font-size: 5.2rem;font-weight:500;color: #fff;">IPSUM SIT</div>
+                        <div class="mt-4 mb-4" style="max-width: 200px;height: 1px;border-radius: 100px;background-color: #fff;">
+                        </div>
+                        <div class="mt-2"
+                            style="max-width: 600px;font-family: 'Poppins', sans-serif;font-weight: 300;font-size:1.1rem">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type...
+                        </div>
+                        <div class="mt-4" style="width: 80%;font-family: 'Poppins', sans-serif;font-size:1rem">
+                            <button class="btn px-4 py-2"
+                                style="font-weight: 600;background-color: #FFB800;color:#171a3d;border: 1px solid #171a3d;border-radius: 0;width: 120px;">Portfolyo</button>
+                            <button class="btn px-4 py-2"
+                                style="font-weight: 500;background-color: transparent;color:#fff;border: 1px solid #fff;border-radius: 0;width: 120px;">İletişim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100" style="background-color: #FFB800; color: #171a3d;height: 135px;">
+        <div class="container">
+            <div class="row" style="height: 100%;display: flex;align-items: center;">
+                <div class="col-7">
+                    <h2 style="font-family: 'Roboto';font-weight: 600;font-size: 1.5rem;line-height: 32px;height: 56px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
+                </div>
+                <div class="col-5" style="text-align: right;">
+                    <button class="btn px-4 py-2"
+                        style="font-weight: 700;font-size: 1.2rem;background-color: #fff;color:#0E0F1B;border: 2px solid #0E0F1B;border-radius: 0;width: 170px;height: 55px;">ABONE OL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- {% include 'footer.html' %} -->
 </body>
 
 </html>
