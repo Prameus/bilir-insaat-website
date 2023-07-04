@@ -1,0 +1,360 @@
+<!-- {% load static %} -->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bilir İnşaat</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .nav-link {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 1.1rem;
+            color: #fff !important;
+            position: relative;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            border-radius: 2px;
+            scale: 0 1;
+            transform-origin: right;
+            transition: scale 0.25s;
+        }
+
+        .nav-link:hover::before {
+            scale: 1;
+            transform-origin: left;
+        }
+
+        .navbar-nav {
+            gap: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div
+        style="height: 25vh;background-color:white;background-image: url(../static/images/main-bg.jpg);background-position: 0 20%;background-repeat: no-repeat;background-size: cover;">
+        <div class="container">
+            <header class="pt-3 mb-2">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid p-0">
+                        <a class="navbar-brand" href="#"><img src="../static/images/logo.png"
+                                style="width: 160px;height:auto"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <div class="mb-2 mb-lg-0 d-flex justify-content-end w-100">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="home.html">Ana Sayfa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                                    </li>
+                                    <!--<li class="nav-item">
+                                        <a class="nav-link" href="#">İletişim</a>
+                                    </li>-->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="references.html">Referanslar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div style="color:white;align-items: end;display: flex;justify-content: center;font-size: 2rem;font-family: 'Poppins';font-weight: 300;">Referanslar</div>
+        </div>
+    </div>
+    
+    <div class="container my-5">
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2023-... Konya Çatalhöyük Ziyaretçi Merkezi Teşhir ve Tanzim İşi	</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2022-2023 Konya Çatalhöyük Ziyaretçi Merkezi A,B,C,G,H Bloklar 1.Etap İkmal İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2021-2022 Konya B.Ş.B. Çatalhöyük Ziyaretçi Merkezi A,B,C,G,H Bloklar 1. Etap</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2018-2020 Tcdd Eskişehir Gar Binası Restorasyon Yapım İşi</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2018-2019 Tcdd Eskişehir YHT Kapalı Kesit Üzeri Cam Yürüyüş Yolu Tadilatı İşi</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2018-2018 İZSU Konak Mithatpaşa cd Ø 1200 DF İçmesuyu Deplase İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2017-2019 Bursa Gürsu 36 Daire Konut Projesi</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2018-2018 Tcdd Van Kapıköy Çeken Erçek İst Arası Kıyı Tahkimatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2017-2018 İZSU Urla İlçesi Yağmursuyu ve Kısmi Atıksu İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2017-2018 İZSU Kemalpaşa Yağmursuyu ve Kısmi Atıksu İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2017-2017 Manisa Maski 2017 Yılı Muhtelif Derelerde Bakım Onarım İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2016-2016 Birleşik Arap Emirlikleri Lojman Tadilatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2016-2017 Tcdd 7. Bölge Kütahya OSB Köprü İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2015-2018 Mersin Mamure Kalesi İkmal Restorasyon İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2015-2016 Tcdd Gn Md Eskişehir YHT Hattı Peyzaj Düzenleme İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2014-2015 Edirne Barosu Hizmet Binası İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2014-2015 Mersin Anamur Mamure Kalesi Restorasyon İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2014-2014 Sincan Çadırtepe Tıbbi Atık Lagünleri Yapım İşi</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2013-2013 Ankara B.Ş.B. Uzayçağı Cad. Köprü İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2012-.... TOKİ Karayolları Eğitim Tes Çevre Düzenleme İnş.</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2012-2012 TCDD Gn Md Sincan RTE Köprü İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2011-2012 IRAK Süleymaniye Demir Çelik Fab. TEFİROM</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2011-2012 İZSU - Karşıyaka Caher Dudayev Yağmur Suyu İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2011-2012 İZSU Çiğili İstasyon Mah. Yağmur Suyu İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2011-2012 ÇALBİR Kanalizasyon ve Arıtma İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2010-2011 Bursa Gölalan Köprüsü</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2010-2010 İZSU Gaziemir Atıfbey Yağmursuyu İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2009-2011 BİLİR TEFİROM İŞ ORT ASKİ Altındağ Grubu İçmesuyu</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2009-2010 Bursa Nilüfer Çayı Yaya Üst Geçidi</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2009-2010 İZSU Selçuk İlçesi İçmesuyu İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2009-2010 İZSU Gaziemir Emlakbank Yağmursuyu İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2009-2010 Tefirom Res Yol Türbin İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2009-2010 Tefirom Ostim Finans ve İş Merkezi İnşaatı Toprak İşleri</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2008-2009 Serrom Incity konut Projesi İnce İşleri Bükreş/Romanya</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2008-2009 G Market Renovasyon İşi Bükreş/Romanya</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2008-2009 Finansbank Ibtech AŞ Binası İnş (Tübitak Mam Tekn Serbest Böl)</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2008-2009 Sincan Çadırtepe Tıbbi Atık Lagünleri Yapım İşi</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2006-2007 Serden AŞ F Blok İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2006-2007 Finansbank Bilkent DRC Bilgi işlem Binası İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2006-2006 Bursa Polis Okulu Köprülü Kavşak İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2005-2006 Ostim Mega Center İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2006-2006 Çadırtepe Katı Tıbbi Atık Depolama Alanı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2005-2005 Bursa Merinos Köprülü Kavşak İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2005-2005 Bursa Orhaneli Köprülü Kavşak İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2005-2005 Çiğdem Mah Geven Şeker Sitesi ve Çev Düz İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2005-2005 Ankara Tıbbi Atık Depolama Hücreleri İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2004-2004 Katı Tıbbi Atık Depolama Lagünleri Yapım işi</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2004-2004 Bursa Yüksek İhtisas Köprülü Kavşak İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2004-2004 Türkocağı Köprülü Kavşak İnşaatı</span>
+        </div>
+        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+            <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2003-2003 Konya Mobilyacılar Köprülü Kavşak İnşaatı</span>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <style>
+        .social-links {
+            width: 100%;
+            padding: 15px 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.3rem;
+            -webkit-transition: color .3s;
+            transition: color .3s;
+            padding: 0 5px;
+        }
+
+        .social-links a:hover {
+            color: #ffb800;
+        }
+
+        footer {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        footer h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #ffb800;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        footer ol {
+            font-weight: 300;
+            font-size: .85rem;
+            color: #ffffffe3;
+        }
+
+        footer ol li {
+            margin-bottom: 8px;
+        }
+
+        .fa-ul {
+            margin-left: var(--fa-li-margin, 2em) !important;
+            margin-bottom: 0;
+        }
+    </style>
+
+    <footer class="w-100" style="background-color: #0E0F1B;color:white">
+        <div class="container" style="padding: 4rem 0;">
+            <div class="row">
+                <div class="col-md-2 mb-2 mx-3">
+                    <img src="../static/images/logo.png" style="width: 160px;" />
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-9 row">
+                    <div class="col-sm-3 mx-2">
+                        <h3>Hızlı Bağlantılar</h3>
+                        <ol class="fa-ul">
+                            <li><span class="fa-li">●</span>Ana Sayfa</li>
+                            <li><span class="fa-li">●</span>Hakkımızda</li>
+                            <li><span class="fa-li">●</span>İletişim</li>
+                            <li><span class="fa-li">●</span>Referanslar</li>
+                            </ul>
+                    </div>
+                    <div class="col-sm-4 mx-2">
+                        <h3>Hizmetler</h3>
+                        <ol class="fa-ul">
+                            <li><span class="fa-li">●</span>Köprülü Kavşak İnşaatı</li>
+                            <li><span class="fa-li">●</span>Depolama Alanı</li>
+                            <li><span class="fa-li">●</span>Bina İnşaatı</li>
+                            </ul>
+                    </div>
+                    <div class="col-sm-4 mx-2">
+                        <h3>İletişim Bilgileri</h3>
+                        <ol class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>info@bilirinsaat.com.tr</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>+90 (312) 418 0825</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>Hilal Mah. 694. Sk.
+                                Burcu Apt. No:2/6 Yıldız -
+                                Çankaya / Ankara</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0" style="color: #fff;">
+        <div class="py-3 text-center">
+            <div>
+                <span style="font-size: .65rem;padding-right: 5px;">Powered by</span>
+                <a href="https://apolyum.com" target="_blank"><img src="../static/images/apolyum-logo.png"
+                        style="width: 80px;" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7bca0cd7d8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- {% include 'footer.html' %} -->
+</body>
+
+</html>
