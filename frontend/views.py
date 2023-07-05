@@ -4,4 +4,7 @@ def home(request, *args, **kwargs):
     return render(request, 'home.html')
 
 def reference(request,*args,**kwargs):
-    return render(request, 'reference.html')
+    return render(request, 'references.html')
+
+def about(request, *args, **kwargs):
+    return render(request, 'about.html')
