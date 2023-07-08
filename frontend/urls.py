@@ -5,8 +5,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', home),
-    path('reference/', reference),
-    path('about/', about)
+    path('reference', reference),
+    path('about', about)
 ]
 
 if settings.DEBUG:

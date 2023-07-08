@@ -122,9 +122,10 @@ USE_TZ = True
 IMAGE_ROOT = os.path.join(BASE_DIR, 'frontend/images')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/static')
+    os.path.join(BASE_DIR, 'frontend/static'),
+    BASE_DIR / "frontend/",
 ]
-STATIC_URL = 'static/'
+STATIC_URL = 'frontend/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
