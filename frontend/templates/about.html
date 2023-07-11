@@ -5,66 +5,92 @@
 {% include "navbar.html" with title_pager="Hakkımızda" %}
     <style>
         .liste li{
-            margin-bottom: 10px
+            margin-bottom: 5px
         }
     </style>
-    <div class="container my-5">
-        <div class="cards" style="margin-top: 4rem">
-            <h2 style="font-size: 1.5rem;font-family: 'Poppins';margin-bottom:20px">BİLİR İNŞAAT TİCARET TURİZM VE SANAYİ LİMİTED ŞİRKETİ</h2>
-            <div>
-                <img src="{% static 'images/binalar.jpg' %}" style="border-radius: 20px; width: 250px; height: 250px;float:left;margin-right: 20px;object-fit: cover;" />
-                <p style="font-family: 'Poppins';font-size: .9rem;">Firmamız 1992 yılında Ankara’da kurulmuştur. Mühendislik ve Genel Müteahhitlik hizmetleri sunmak amacı ile faaliyetine başlamıştır.<br><br>
-                    Kuruluşunun ilk yıllarında alt yapı işleri; yol inşaatları, içme suyu ve kanalizasyon inşaatları ile kentsel çevre düzenleme ve büyük onarım alanlarında yoğunlaşmıştır. İlerleyen yıllarda alt yapı işleri ile birlikte üst yapı, prefabrik yapılar, çelik yapılar ve çevre projelerinin de devreye girmesi ile iş hacmini artırarak kamu kurum ve kuruluşları ile Özel sektörde isim yapmıştır.<br><br>
-                    BİLİR İNŞAAT 30 yılı aşmış bilgi birikimi ve deneyimi ile tecrübeli teknik kadrosuyla beraber tamamladığı her projede takdir toplayarak bir marka olmuştur. Her yeni işte; proje ile teknik hizmeti , kalite ile teknolojiyi birleştirerek en kısa sürede en verimli hizmeti oluşturmayı kendisine ilke edinmiştir.</p>
+    
+    <div style="height: auto;background-color:white;background-image: url({% static 'images/bg.jpg' %});background-position: center right;background-repeat: no-repeat;background-size: cover;">
+        <div class="container py-5 d-flex align-items-center h-100">
+            <div class="cards">
+                <h2 style="font-size: 1.5rem;font-weight: 600;font-family: 'Roboto';margin-bottom:20px;">Bilir İnşaat Ticaret Turizm ve Sanayi Limited Şirketi</h2>
+                <div>
+                    <p style="font-family: 'Poppins';font-size: .9rem;font-weight: 200;">Firmamız 1992 yılında Ankara’da kurulmuştur. Mühendislik ve Genel Müteahhitlik hizmetleri sunmak amacı ile faaliyetine başlamıştır.<br><br>
+                        Kuruluşunun ilk yıllarında alt yapı işleri; yol inşaatları, içme suyu ve kanalizasyon inşaatları ile kentsel çevre düzenleme ve büyük onarım alanlarında yoğunlaşmıştır. İlerleyen yıllarda alt yapı işleri ile birlikte üst yapı, prefabrik yapılar, çelik yapılar ve çevre projelerinin de devreye girmesi ile iş hacmini artırarak kamu kurum ve kuruluşları ile Özel sektörde isim yapmıştır.<br><br>
+                        BİLİR İNŞAAT 30 yılı aşmış bilgi birikimi ve deneyimi ile tecrübeli teknik kadrosuyla beraber tamamladığı her projede takdir toplayarak bir marka olmuştur. Her yeni işte; proje ile teknik hizmeti , kalite ile teknolojiyi birleştirerek en kısa sürede en verimli hizmeti oluşturmayı kendisine ilke edinmiştir.
+                    </p>
+                </div>
+                <div style="clear: both;"></div>
             </div>
-            <div style="clear: both;"></div>
-        </div>
-        <div class="cards" style="margin-top: 6rem">
-            <h2 style="font-size: 1.5rem;font-family: 'Poppins';margin-bottom:20px">KALİTE POLİTİKAMIZ</h2>
-            <div>
-                <img src="{% static 'images/binalar.jpg' %}" style="margin-left: 20px;border-radius: 20px; width: 250px; height: 250px;object-fit: cover;float:right;" />
-                <ul class="liste" style="font-family: 'Poppins';font-size: .9rem;">
-                    <li>Müşteri istek ve beklentilerini tam olarak karşılamak.</li>
-                    <li>Şirketimizin ana sermayesini oluşturan insan kaynaklarımızın, tatmini, eğitimi ve gelişimini sağlamak.</li>
-                    <li>Takım çalışması yapmak.</li>
-                    <li>Hizmetlerimizi yasalar, etik kurallara uyarak yapmak.</li>
-                    <li>Karşılıklı güven ortamı sağlamak.</li>
-                    <li>Şirketimizin saygınlığını korumak.</li>
-                    <li>Kalite seviyemizin yükseltilmesi, verimliliğin artırılması için bilim ve teknolojideki gelişmeleri takip etmek ve uygulamak.</li>
-                </ul>
-            </div>
-            <div style="clear: both;"></div>
-        </div>
-        <div class="cards" style="margin-top: 6rem">
-            <h2 style="font-size: 1.5rem;font-family: 'Poppins';margin-bottom:20px">MİSYONUMUZ</h2>
-            <div>
-                <img src="{% static 'images/binalar.jpg' %}" style="margin-right: 40px;border-radius: 20px; width: 250px; height: 250px;object-fit: cover;float:left;" />
-                <ul class="liste" style="font-family: 'Poppins';font-size: .9rem;">
-                    <li>Müşteri istek ve beklentilerini tam olarak karşılamak.</li>
-                    <li>Şirketimizin ana sermayesini oluşturan insan kaynaklarımızın, tatmini, eğitimi ve gelişimini sağlamak.</li>
-                    <li>Takım çalışması yapmak.</li>
-                    <li>Hizmetlerimizi yasalar, etik kurallara uyarak yapmak.</li>
-                    <li>Karşılıklı güven ortamı sağlamak.</li>
-                    <li>Şirketimizin saygınlığını korumak.</li>
-                    <li>Kalite seviyemizin yükseltilmesi, verimliliğin artırılması için bilim ve teknolojideki gelişmeleri takip etmek ve uygulamak.</li>
-                </ul>
-            </div>
-            <div style="clear: both;"></div>
-        </div>
-        <div class="cards" style="margin-top: 6rem">
-            <h2 style="font-size: 1.5rem;font-family: 'Poppins';margin-bottom:20px">VİZYONUMUZ</h2>
-            <div>
-                <img src="{% static 'images/binalar.jpg' %}" style="margin-left: 20px;border-radius: 20px; width: 250px; height: 250px;object-fit: cover;float:right;" />
-                <ul class="liste" style="font-family: 'Poppins';font-size: .9rem;">
-                    <li>Ekonomik ve sorunsuz hizmet sunmak,</li>
-                    <li>Yurtiçi ve Yurt dışında sektöründe lider olmak,</li>
-                    <li>Kurumsal mükemmelliğin ön koşulu olan ekip mükemmelliği ile birlikte inşaat konusunda verdiğimiz hizmetlerin gelişimini ve sürekliliğini sağlamak,</li>
-                    <li>Kamu kurumları ile özel sektör hizmet alanlarında küresel bir şirket olarak yetenek ve bilgilerimizi sunmak.</li>
-                </ul>
-            </div>
-            <div style="clear: both;"></div>
         </div>
     </div>
+        <div style="height: auto;background-color:#0E0F1B;">
+            <div class="container pt-3 py-md-0">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-end p-0">
+                        <img src="{% static 'images/kalite-politikamiz.jpg' %}" style="width: 100%;max-width: 560px;" />
+                    </div>
+                    <div class="col-md-6 p-4 d-flex align-items-center">
+                        <div style="max-width: 450px;font-family: 'Roboto'; color:white">
+                            <h2 style="font-weight: 600;font-size: 1.8rem;">Kalite Politikamız</h2>
+                            <ul class="liste mb-0" style="font-family: 'Poppins';font-size: .9rem;font-weight: 200;    list-style: disc;">
+                                <li>Müşteri istek ve beklentilerini tam olarak karşılamak.</li>
+                                <li>Şirketimizin ana sermayesini oluşturan insan kaynaklarımızın, tatmini, eğitimi ve gelişimini sağlamak.</li>
+                                <li>Takım çalışması yapmak.</li>
+                                <li>Hizmetlerimizi yasalar, etik kurallara uyarak yapmak.</li>
+                                <li>Karşılıklı güven ortamı sağlamak.</li>
+                                <li>Şirketimizin saygınlığını korumak.</li>
+                                <li>Kalite seviyemizin yükseltilmesi, verimliliğin artırılması için bilim ve teknolojideki gelişmeleri takip etmek ve uygulamak.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-5" style="height: auto;background-color:white;">
+            <div class="container pt-3 py-md-0">
+                <div class="row">
+                    <div class="col-md-6 p-4 d-flex align-items-center justify-content-end">
+                        <div style="max-width: 450px;font-family: 'Roboto'; color:rgb(255 137 107)">
+                            <h2 style="font-weight: 600;font-size: 1.8rem;">Misyonumuz</h2>
+                            <ul class="liste mb-0" style="font-family: 'Poppins';font-size: .9rem;font-weight: 200;list-style: disc;color: #352437">
+                                <li>Müşteri istek ve beklentilerini tam olarak karşılamak.</li>
+                                <li>Şirketimizin ana sermayesini oluşturan insan kaynaklarımızın, tatmini, eğitimi ve gelişimini sağlamak.</li>
+                                <li>Takım çalışması yapmak.</li>
+                                <li>Hizmetlerimizi yasalar, etik kurallara uyarak yapmak.</li>
+                                <li>Karşılıklı güven ortamı sağlamak.</li>
+                                <li>Şirketimizin saygınlığını korumak.</li>
+                                <li>Kalite seviyemizin yükseltilmesi, verimliliğin artırılması için bilim ve teknolojideki gelişmeleri takip etmek ve uygulamak.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-start p-0">
+                        <img src="{% static 'images/misyonumuz1.jpg' %}" style="width: 100%;max-width: 560px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-5" style="height: auto;background-color:#c1e0f4;">
+            <div class="container pt-3 py-md-0">
+                <div class="row">
+                    <div class="col-md-6 d-lg-flex justify-content-end p-0">
+                        <img src="{% static 'images/vizyonumuz.jpg' %}" style="width: 100%;max-width: 405px;" />
+                    </div>
+                    <div class="col-md-6 p-4 d-flex align-items-center">
+                        <div style="max-width: 450px;font-family: 'Roboto'; color:rgb(8 69 124)">
+                            <h2 style="font-weight: 600;font-size: 1.8rem;">Vizyonumuz</h2>
+                            <ul class="liste mb-0" style="font-family: 'Poppins';font-size: .9rem;font-weight: 200;list-style: disc;">
+                                <li>Ekonomik ve sorunsuz hizmet sunmak,</li>
+                                <li>Yurtiçi ve Yurt dışında sektöründe lider olmak,</li>
+                                <li>Kurumsal mükemmelliğin ön koşulu olan ekip mükemmelliği ile birlikte inşaat konusunda verdiğimiz hizmetlerin gelişimini ve sürekliliğini sağlamak,</li>
+                                <li>Kamu kurumları ile özel sektör hizmet alanlarında küresel bir şirket olarak yetenek ve bilgilerimizi sunmak.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
