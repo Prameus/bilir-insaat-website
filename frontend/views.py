@@ -20,3 +20,7 @@ def about(request, *args, **kwargs):
 
 def navbar(request, *args, **kwargs):
     return render(request, 'navbar.html')
+
+
+def contact(request, *args, **kwargs):
+    return render(request, 'contact.html')

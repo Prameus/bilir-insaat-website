@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, reference, about
+from .views import *
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -8,7 +8,9 @@ urlpatterns = [
     path('reference/', reference),
     path('about/', about),
     path('reference', reference),
-    path('about', about)
+    path('about', about),
+    path('contact/', contact),
+    path('contact', contact)
 ]
 
 if settings.DEBUG:
