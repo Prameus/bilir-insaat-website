@@ -6,11 +6,76 @@
 {% include "navbar.html" with title_pager="Referanslar" %}
 
     <div class="container my-5">
-        {%for x in reference_category%}
-        <!--<img src="{{ x.referans_fotografi.url }}"/>
-        <div>{{x.referans_fotografi.url}}</div>-->
-        {%endfor%}
-        <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
+        {% comment %} <h1>{{reference_category}}</h1> {% endcomment %}
+        {% comment %} {%for y in x%} {% endcomment %}
+        {% comment %} <h1>{{reference_category}}</h1> {% endcomment %}
+        {% comment %} <h1>{{"x[0]"}}</h1> {% endcomment %}
+        
+        {% comment %} <img src="{{ 'x["referans_fotografi"]' }}"/> {% endcomment %}
+<!--<div>{{x.referans_fotografi.url}}</div>-->
+
+{%for x in reference_category%}
+
+        <div class="containerSwiper" style="font-size: .95rem;font-family: 'Poppins';margin-bottom:3vh;">
+            <div class="accordion cards p-2 mb-2">
+            <span style="margin-right: 15px;margin-left: 10px;"><a style="text-decoration:none; color:#979797" href="#">+</a></span><span>2023-... Konya Çatalhöyük Ziyaretçi Merkezi Teşhir ve Tanzim İşi	</span>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            {% for y in x%}
+          
+            <div style="border-radius:10px;width:300px;height:300px;" class="swiper-slide"><img id="myImg" class="imageClass" src="{{y}}" alt="hebele"></div>
+          
+            <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img  class="modal-content" id="img01">
+            <div id="caption"></div>
+            </div>
+            {% comment %}    
+            <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            {% endcomment %}
+            {%endfor%}
+        </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+{%endfor%}
+            {% comment %} <div class="card" style="width: 18rem;">
+                <img src="{{x.referans_fotografi.url}}" class="card-img-top" alt="{{x.referans_fotografi.}}">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                
+            </div> 
+            <div class="card" style="width: 18rem;">
+                <img src="{{x.referans_fotografi.url}}" class="card-img-top" alt="{{x.referans_fotografi.}}">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+             <div class="card" style="width: 18rem;">
+                <img src="{{x.referans_fotografi.url}}" class="card-img-top" alt="{{x.referans_fotografi.}}">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+             <div class="card" style="width: 18rem;">
+                <img src="{{x.referans_fotografi.url}}" class="card-img-top" alt="{{x.referans_fotografi.}}">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div> {% endcomment %}
+        {% comment %} {%endfor%} {% endcomment %}
+   
+        {% comment %} <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
             <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2023-... Konya Çatalhöyük Ziyaretçi Merkezi Teşhir ve Tanzim İşi	</span>
         </div>
         <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
@@ -159,8 +224,44 @@
         </div>
         <div class="cards p-2 mb-2" style="font-family: 'Poppins';font-size: .95rem;color:#979797;background-color: #F8F8F8;border:1px solid #DFDFDF;">
             <span style="margin-right: 15px;margin-left: 10px;">+</span><span>2003-2003 Konya Mobilyacılar Köprülü Kavşak İnşaatı</span>
-        </div>
+        </div> {% endcomment %}
     </div>
 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+    } 
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+  });
+}
+</script>
+<script>
+    
+</script>
     {% endblock %}
